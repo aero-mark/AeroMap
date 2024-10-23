@@ -1,0 +1,14 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/dem.10m/data/OR/OR_BRIDAL_VEIL_10M.DEM
+	src = D:/Geodata/dem.10m/data/OR/OR_MULTNOMAH_FALLS_10M.DEM
+terrain
+	model_path = D:/Geodata/gen/Hermiston
+	model_path = D:/Geodata/gen/Lyle-6kx5k
+lidar
+	src = D:/Geodata/lidar/1.1_0.las
+	src = D:/Geodata/lidar/fusa-1.1_1.las
+raster
+	src = C:/Users/xmark/Dev/Geo/MapEdit/Data/raster_test2.png

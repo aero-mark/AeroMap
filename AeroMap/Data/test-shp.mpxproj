@@ -1,0 +1,8 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/shapefiles/country/cyprus/cyprus_coastline.shp
+terrain
+	model_path = D:/Geodata/gen/MyMap
+lidar

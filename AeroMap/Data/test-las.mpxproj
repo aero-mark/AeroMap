@@ -1,0 +1,9 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+terrain
+lidar
+	src = D:/Geodata/lidar/1.2-with-color.las
+	src = D:/Geodata/lidar/fusa-1.1_1.las
+raster

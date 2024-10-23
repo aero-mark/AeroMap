@@ -1,0 +1,10 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/dem.10m/data/OR/OR_CRATER_LAKE_EAST_10M.DEM
+	src = D:/Geodata/dem.10m/data/OR/OR_CRATER_LAKE_WEST_10M.DEM
+terrain
+	model_path = D:/Geodata/gen/CraterLake
+lidar
+raster

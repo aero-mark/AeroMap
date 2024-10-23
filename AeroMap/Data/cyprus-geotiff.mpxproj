@@ -1,0 +1,14 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/geotiff/cyprus/n34_e032_1arc_v3.tif
+	src = D:/Geodata/geotiff/cyprus/n34_e033_1arc_v3.tif
+	src = D:/Geodata/geotiff/cyprus/n34_e034_1arc_v3.tif
+	src = D:/Geodata/geotiff/cyprus/n35_e032_1arc_v3.tif
+	src = D:/Geodata/geotiff/cyprus/n35_e033_1arc_v3.tif
+	src = D:/Geodata/geotiff/cyprus/n35_e034_1arc_v3.tif
+	src = D:/Geodata/shapefiles/country/cyprus/cyprus_coastline.shp
+terrain
+lidar
+raster

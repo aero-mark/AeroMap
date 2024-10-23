@@ -1,0 +1,13 @@
+DataSource DEM10
+CenterLat 45.7294
+CenterLon -121.4883
+SizeXM 8000
+SizeYM 6000
+SizeXDeg 0
+SizeYDeg 0
+ColorScale C:/Users/mark/Dev/Geo/MapEdit/Data/Brew9-BuGn.cscale
+TextureScale C:/Users/mark/Dev/Geo/MapEdit/Data/test2.tscale
+TextureSource CSCALE
+PixelsPerPoint 10
+ModelName MyModel
+OutputFolder D:/Geodata/gen

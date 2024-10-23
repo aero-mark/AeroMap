@@ -1,0 +1,10 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/dem.10m/data/NM/NM_CASA_GRANDE_SW_10M.DEM
+	src = D:/Geodata/dem.10m/data/NM/NM_CALIENTE_CANYON_SOUTH_10M.DEM
+terrain
+	model_path = D:/Geodata/gen/Hermiston
+lidar
+	src = D:/Geodata/lidar/100-points-1.2_3.las

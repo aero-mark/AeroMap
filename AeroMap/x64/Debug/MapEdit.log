@@ -1,0 +1,52 @@
+﻿  BmpFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\BmpFile.cpp': No such file or directory
+  Calc.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Calc.cpp': No such file or directory
+  Camera.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Camera.cpp': No such file or directory
+  GLManager.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\GLManager.cpp': No such file or directory
+  ImageFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\ImageFile.cpp': No such file or directory
+  JpegFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\JpegFile.cpp': No such file or directory
+  Light.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Light.cpp': No such file or directory
+  Logger.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Logger.cpp': No such file or directory
+  MarkLib.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\MarkLib.cpp': No such file or directory
+  Material.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Material.cpp': No such file or directory
+  Model.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Model.cpp': No such file or directory
+  Model_3DS.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Model_3DS.cpp': No such file or directory
+  Model_AC.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Model_AC.cpp': No such file or directory
+  Model_OBJ.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Model_OBJ.cpp': No such file or directory
+  Model_X.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Model_X.cpp': No such file or directory
+  PngFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\PngFile.cpp': No such file or directory
+  Primitive.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Primitive.cpp': No such file or directory
+  ShaderGL.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\ShaderGL.cpp': No such file or directory
+  Sphere.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\Sphere.cpp': No such file or directory
+  SvgFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\SvgFile.cpp': No such file or directory
+  Generating Code...
+  Compiling...
+  TextFile.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\TextFile.cpp': No such file or directory
+  TextureGL.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\TextureGL.cpp': No such file or directory
+  TinyXML2.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\TinyXML2.cpp': No such file or directory
+  VertexBufferGL.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\..\Common\VertexBufferGL.cpp': No such file or directory
+  AboutDlg.cpp
+C:\AeroMap\MapEdit\MapEdit.h(18,10): fatal error C1083: Cannot open include file: 'MarkTypes.h': No such file or directory

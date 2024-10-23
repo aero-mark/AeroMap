@@ -1,0 +1,13 @@
+DataSource DEM10
+CenterLat 45.6883
+CenterLon -121.2861
+SizeXM 6000.0
+SizeYM 5000.0
+SizeXDeg 1.0
+SizeYDeg 1.0
+ColorScale Brew9-BuGn.cscale
+TextureScale test.tscale
+TextureSource CSCALE
+PixelsPerPoint 1
+ModelName MyModel
+OutputFolder D:/Geodata/gen

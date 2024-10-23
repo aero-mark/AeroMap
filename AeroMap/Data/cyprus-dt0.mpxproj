@@ -1,0 +1,13 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/dted.0/e030/e032_n34.dt0
+	src = D:/Geodata/dted.0/e030/e032_n35.dt0
+	src = D:/Geodata/dted.0/e030/e033_n34.dt0
+	src = D:/Geodata/dted.0/e030/e033_n35.dt0
+	src = D:/Geodata/shapefiles/country/cyprus/cyprus_coastline.shp
+terrain
+	model_path = D:/Geodata/gen/Barview
+	model_path = D:/Geodata/gen/ParkCenter
+lidar

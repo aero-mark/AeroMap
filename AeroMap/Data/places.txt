@@ -1,0 +1,10 @@
+42.941,    -122.107, Crater Lake
+45.729361, -121.488296, Park Center
+45.688287, -121.286056, Lyle Point
+45.374516, -121.697839, Mount Hood
+45.549453, -122.396765, Troutdale Airport
+45.569200, -123.944055, Barview
+45.8125, -119.3125, Hermiston Quad Center
+45.689598, -121.844985, Funk's Island
+35.210882,  24.857878, Crete
+ 

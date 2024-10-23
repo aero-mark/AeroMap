@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DroneProcDlg</class>
+ <widget class="QDialog" name="DroneProcDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>538</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Process Drone Imagery</string>
+  </property>
+  <widget class="QPushButton" name="cmdRun">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>310</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCancel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>310</y>
+     <width>111</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>150</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Outputs:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkDTM">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>150</y>
+     <width>271</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string extracomment="Ground points (lowest returns)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create a DTM (Digital Terrain Model, ground only).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>DTM - Digital Terrain Model (ground)</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkDSM">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>170</y>
+     <width>271</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string extracomment="Surface points (highest returns)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create a DSM (Digital Surface Model, ground + objects).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>DSM - Digital Surface Model (canopy)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>56</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DEM Resolution:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinDemResolution">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>56</y>
+     <width>62</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DSM/DTM resolution in cm/pixel. Note that this value is capped by a ground sampling distance (GSD) estimate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>16</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Initial Stage:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cboInitStage">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>16</y>
+     <width>145</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>104</y>
+     <width>129</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Orthophoto Resolution:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinOrthoResolution">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>104</y>
+     <width>62</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Orthophoto resolution in cm / pixel. Note that this value is capped by a ground sampling distance (GSD) estimate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>80</y>
+     <width>113</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DEM Gap Fill Steps:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="spinDemGapFillSteps">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>80</y>
+     <width>62</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of steps used to fill areas with gaps. Set to 0 to disable gap filling. Starting with a radius equal to the output resolution, N different DEMs are generated with progressively bigger radius using the inverse distance weighted (IDW) algorithm and merged together. Remaining gaps are then merged using nearest neighbor interpolation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.000000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>cboInitStage</tabstop>
+  <tabstop>spinDemResolution</tabstop>
+  <tabstop>spinDemGapFillSteps</tabstop>
+  <tabstop>spinOrthoResolution</tabstop>
+  <tabstop>chkDTM</tabstop>
+  <tabstop>chkDSM</tabstop>
+  <tabstop>cmdRun</tabstop>
+  <tabstop>cmdCancel</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

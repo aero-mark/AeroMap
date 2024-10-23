@@ -1,0 +1,9 @@
+project
+	name=Sample Project
+	srs=---
+workspace
+	src = D:/Geodata/mars/DTEED_071720_1895_071575_1895_A01.IMG
+terrain
+	model_path = D:/Geodata/gen/mars
+lidar
+raster

@@ -1,0 +1,5 @@
+project
+	name=
+drone
+	input = D:/test_aero/images
+	output = D:/test_aero
