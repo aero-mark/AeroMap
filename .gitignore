@@ -58,7 +58,9 @@ Lib/zlib/x64/
 *.slo
 *.lo
 *.o
-*.obj
+# better to ignore specific build directories thana all .obj,
+# which includes many 3d model files
+#*.obj
 
 # Precompiled Headers
 *.gch
