@@ -13,6 +13,20 @@ ui_*
 AeroMap/x64/
 AeroMap/Data/AeroMap.log
 
+Lib/pdal-2.3/x64/
+Lib/gdal-3.2.1/x64/
+Lib/CppUnitLite/x64/
+Lib/jpeg-9a/x64/
+Lib/laslib/x64/
+Lib/laszip/x64/
+Lib/libpng-1.6.20/x64/
+Lib/libpng-1.6.20/x64/
+Lib/tiff-4.0.10/libtiff/*.obj
+Lib/tiff-4.0.10/port/*.obj
+Lib/tiff-4.0.10/tools/*.obj
+Lib/proj-7.1.1/build_vs14_x64/src/x64/
+Lib/zlib/x64/
+		
 Test*.exe
 Test*.log
 
@@ -41,17 +55,6 @@ UnitTests/TestSvgFile/x64/
 UnitTests/TestTiffFile/x64/
 UnitTests/TestXString/x64/
 
-Lib/pdal-2.3/x64/
-Lib/gdal-3.2.1/x64/
-Lib/CppUnitLite/x64/
-Lib/jpeg-9a/x64/
-Lib/laslib/x64/
-Lib/laszip/x64/
-Lib/libpng-1.6.20/x64/
-Lib/libpng-1.6.20/x64/
-Lib/proj-7.1.1/build_vs14_x64/src/x64/
-Lib/zlib/x64/
-		
 # Prerequisites
 *.d
 
@@ -70,7 +73,8 @@ Lib/zlib/x64/
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+# all dlls way to aggressive
+#*.dll
 
 # Fortran module files
 *.mod
