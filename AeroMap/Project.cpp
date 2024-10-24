@@ -5,7 +5,6 @@
 //
 //		project
 //			name = Sample Project
-//			srs = UTM_10
 //		drone
 //			input = path to input images
 //			output = root folder that will receive outputs
@@ -23,7 +22,6 @@
 #include "Logger.h"
 #include "Project.h"
 
-#include <iostream>
 #include <thread>
 
 #define DEFAULT_EXT "aero"
@@ -47,7 +45,7 @@ Project::Project()
 
 Project::~Project()
 {
-	FreeResources();
+	Clear();
 }
 
 int Project::Load(const char* fileName)
@@ -63,7 +61,7 @@ int Project::Load(const char* fileName)
 
 	// Project file are hierachical, tab-delimited text files.
 	
-	FreeResources();
+	Clear();
 
 	m_ErrorCtr = 0;
 	Section sect = Section::None;
@@ -183,7 +181,6 @@ int Project::Save(const char* fileName)
 		// write project section
 		fprintf(pFile, "project\n");
 		fprintf(pFile, "\tname=%s\n", ms_ProjectName.c_str());
-		fprintf(pFile, "\tsrs=%s\n", "---");
 
 		// drone section
 		fprintf(pFile, "drone\n");
@@ -216,10 +213,27 @@ void Project::Clear()
 	// Reset project.
 	//
 
-	FreeResources();
+	// free image list
+
+	m_ImageList.clear();
+
+	// free lidar list
+
+	for (auto lidar : mv_Lidar)
+	{
+		if (lidar.pFile)
+		{
+			delete lidar.pFile;
+			lidar.pFile = nullptr;
+		}
+	}
+	mv_Lidar.clear();
 
 	ms_FileName.Clear();
 	ms_ProjectName.Clear();
+
+	ms_DroneInputPath.Clear();
+	ms_DroneOutputPath.Clear();
 
 	mb_IsDirty = false;
 
@@ -336,24 +350,6 @@ int Project::GetIndentLevel(XString& str)
 			break;
 	}
 	return level;
-}
-
-void Project::FreeResources()
-{
-	// Free project resources.
-	//
-
-	// free lidar resources
-
-	for (auto lidar : mv_Lidar)
-	{
-		if (lidar.pFile)
-		{
-			delete lidar.pFile;
-			lidar.pFile = nullptr;
-		}
-	}
-	mv_Lidar.clear();
 }
 
 int Project::GetLidarFileCount()
@@ -559,7 +555,6 @@ void Project::InitArg()
 	//					it, and even then: do not use it. 
 	//					Default: False
 
-	//TODO:
 	arg.max_concurrency = std::thread::hardware_concurrency();
 	// --max-concurrency <positive integer>
 	//					The maximum number of processes to use in various processes. Peak memory requirement is ~1GB

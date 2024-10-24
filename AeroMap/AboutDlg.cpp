@@ -19,6 +19,9 @@ AboutDlg::AboutDlg(QWidget* parent)
 	// remove question mark from title bar
 	setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
+	XString version = XString::Format("Version: %d.%02d", VER_MAJOR, VER_MINOR);
+	labVersion->setText(version.c_str());
+
 	// signals and slots
 	verify_connect(cmdClose, SIGNAL(clicked()), this, SLOT(OnClose()));
 }
