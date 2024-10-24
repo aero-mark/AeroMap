@@ -25,5 +25,6 @@
         <file>Images/dxm32.png</file>
         <file>Images/AeroMap.ico</file>
         <file>Images/drone-proc32.png</file>
+        <file>Images/logo-crop-109x106.jpg</file>
     </qresource>
 </RCC>
