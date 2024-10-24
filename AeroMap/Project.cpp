@@ -23,6 +23,9 @@
 #include "Logger.h"
 #include "Project.h"
 
+#include <iostream>
+#include <thread>
+
 #define DEFAULT_EXT "aero"
 
 enum class Section
@@ -557,7 +560,7 @@ void Project::InitArg()
 	//					Default: False
 
 	//TODO:
-	arg.max_concurrency = 16;
+	arg.max_concurrency = std::thread::hardware_concurrency();
 	// --max-concurrency <positive integer>
 	//					The maximum number of processes to use in various processes. Peak memory requirement is ~1GB
 	//					per thread and 2 megapixel image resolution. Default: 16
